@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="channelKey">
+<button mat-button (click)="initClient()" [class.disabled]="!channelKey">Join</button>
+<button mat-button (click)="leave()" [class.disabled]="!channelKey">Leave</button>
+<div id="video" style="margin:0 auto;">
+  <div id="agora-remote" style="float:right;width:210px;height:147px;display:inline-block;"></div>
+</div>
